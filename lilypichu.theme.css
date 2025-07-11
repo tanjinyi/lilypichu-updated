@@ -1,12 +1,19 @@
 /**
-* @name tanjinyi
-* @author tanjinyi
-* @description Modified theme from Nyria#3863, based on @Melonturtle_ stream design
-* @version 1.0
-* @donate https://ko-fi.com/tanjinyi
+* @name LilyPichu
+* @author Nyria#3863
+* @description A theme based on @Melonturtle_ stream design
+* @invite rtBQX5D3bD
+* @version 1.4
+* @donate https://ko-fi.com/nyria
 */
+/* @import url("https://nyri4.github.io/LilyPichu/main.css"); */
+
+/* Remove decorations */
+/* @import url("https://nyri4.github.io/LilyPichu/stuff/overlay.css"); */
+
 :root {
   /* --- User variables --- */
+
 
   /* Jumping GIF */
   /* --jumping-gif: url("https://i.imgur.com/dCd49s0.gif"); */
@@ -14,10 +21,10 @@
   /* Background (if you want an image replace it by : 
 
 --background-tertiary-alt: url("image-link"); without that => */
-  --background-tertiary-alt: #ffc7d4;
+  --background-tertiary-alt: #ffc7d4 !important;
 
   /* Border-radius for the whole theme */
-  --border-radius: 20px;
+  --border-radius: 20px !important;
 }
 
 .theme-dark {
@@ -48,9 +55,11 @@
   --background-floating: #221115 !important;
   --background-accent: #c5536c !important;
   --background-base-lowest:#3b1d24 !important;
-  --background-base-lower:var(--background-secondary) !important;
+  --chat-background-default: var(--background-secondary-alt) !important;
+  --background-base-lower:var(--background-primary) !important;
   --background-base-low: var(--background-primary) !important;
   
+  --app-background-frame: #771c311f !important;
   --channeltextarea-background: var(--background-secondary) !important;
   --modal-background: var(--background-primary) !important;
   --background-modifier-hover: #5e36403b !important;
@@ -79,6 +88,7 @@
   --bg-overlay-floating: var(--background-secondary) !important;
   --background-mod-subtle:var(--background-secondary) !important;
   --custom-channel-members-bg: var(--background-modifier-hover) !important;
+  
 
   /* Scrollbar */
   --scrollbar-auto-thumb: var(--background-tertiary) !important;
@@ -138,13 +148,14 @@
   --background-secondary: #ffeeee !important;
   --background-secondary-alt: #fdc7c7 !important;
   --background-tertiary: #ffbbbb !important;
-  --background-floating: #ffbbbb !important;
+  --background-floating: var(--background-tertiary) !important;
+  --background-gradient-highest: var(--background-tertiary) !important;
   --background-accent: #c5536c !important;
   --channeltextarea-background: var(--background-secondary) !important;
   --background-modifier-hover: rgba(56, 31, 31, 0.062) !important;
   --background-modifier-active: rgba(19, 12, 12, 0.123) !important;
   --background-modifier-selected: rgba(31, 21, 21, 0.11) !important;
-
+  --app-background-frame: #FAF4F4 !important;
 
   /* Scrollbar */
   --scrollbar-auto-thumb: var(--background-tertiary) !important;
